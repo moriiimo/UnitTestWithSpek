@@ -1,0 +1,54 @@
+ext.kotlin_version = '1.3.0'
+
+ext.deps = [
+        kotlin  : [
+                lib    : "org.jetbrains.kotlin:kotlin-stdlib-jdk8:$kotlin_version",
+                test   : "org.jetbrains.kotlin:kotlin-test:$kotlin_version",
+                reflect: "org.jetbrains.kotlin:kotlin-reflect:$kotlin_version"
+        ],
+        androidx: [
+                appcompat       : "androidx.appcompat:appcompat:1.0.2",
+                constraintlayout: "androidx.constraintlayout:constraintlayout:2.0.0-alpha2",
+                lifecycle       : [
+                        extensions     : "androidx.lifecycle:lifecycle-extensions:2.0.0",
+                        reactivestreams: "androidx.lifecycle:lifecycle-reactivestreams:2.0.0"
+                ],
+                room            : [
+                        compiler: "androidx.room:room-compiler:2.1.0-alpha03",
+                        runtime : "androidx.room:room-runtime:2.1.0-alpha03",
+                        rxjava  : "androidx.room:room-rxjava2:2.1.0-alpha03",
+                        test    : "androidx.room:room-testing:2.1.0-alpha03"
+                ],
+                ktx             : [
+                        core      : "androidx.core:core-ktx:1.0.1",
+                        fragment  : "androidx.fragment:fragment-ktx:1.0.0-alpha3",
+                        correction: "androidx.collection:collection-ktx:1.1.0-alpha01",
+                        viewmodel : "androidx.lifecycle:lifecycle-viewmodel-ktx:2.0.0"
+                ]
+        ],
+        rx      : [
+                java   : "io.reactivex.rxjava2:rxjava:2.1.13",
+                android: "io.reactivex.rxjava2:rxandroid:2.0.2",
+                kotlin : "io.reactivex.rxjava2:rxkotlin:2.2.0"
+        ],
+        jdbc    : [
+                sqlite : "org.xerial:sqlite-jdbc:3.21.0.1",
+                dbtools: "org.dbtools:dbtools-room-jdbc:4.4.0"
+        ],
+        dagger  : [
+                compiler      : "com.google.dagger:dagger-compiler:2.16",
+                core          : "com.google.dagger:dagger:2.16",
+                processor     : "com.google.dagger:dagger-android-processor:2.16",
+                androidcore   : "com.google.dagger:dagger-android:2.16",
+                androidsupport: "com.google.dagger:dagger-android-support:2.16"
+        ],
+        spek    : [
+                dsl   : "org.spekframework.spek2:spek-dsl-jvm:2.0.0",
+                runner: "org.spekframework.spek2:spek-runner-junit5:2.0.0"
+        ],
+        junit   : "junit:junit:4.12",
+        mockito : [
+                core  : "org.mockito:mockito-core:2.8.9",
+                kotlin: "com.nhaarman:mockito-kotlin:1.5.0"
+        ]
+]

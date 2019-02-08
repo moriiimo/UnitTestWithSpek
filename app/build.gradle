@@ -1,0 +1,86 @@
+apply plugin: 'com.android.application'
+apply plugin: 'kotlin-android'
+apply plugin: 'kotlin-android-extensions'
+apply plugin: 'kotlin-kapt'
+apply plugin: 'de.mannodermaus.android-junit5'
+
+android {
+    compileSdkVersion 28
+    defaultConfig {
+        applicationId "com.moriiimo.droidkaigi.unittestwithspek"
+        minSdkVersion 22
+        targetSdkVersion 28
+        versionCode 1
+        versionName "1.0"
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+        javaCompileOptions {
+            annotationProcessorOptions {
+                arguments = ["room.schemaLocation": "$projectDir/schemas".toString()]
+            }
+        }
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+    sourceSets {
+        main.java.srcDirs += 'src/main/kotlin'
+        test.java.srcDirs += 'src/test/kotlin'
+    }
+    testOptions {
+        junitPlatform {
+            filters {
+                engines {
+                    include 'spek2'
+                }
+            }
+        }
+    }
+}
+
+dependencies {
+    implementation fileTree(dir: 'libs', include: ['*.jar'])
+    implementation deps.kotlin.lib
+
+    implementation deps.androidx.appcompat
+    implementation deps.androidx.constraintlayout
+    implementation deps.androidx.ktx.core
+    implementation deps.androidx.ktx.fragment
+    implementation deps.androidx.ktx.correction
+    implementation deps.androidx.ktx.viewmodel
+    implementation deps.androidx.lifecycle.extensions
+    implementation deps.androidx.lifecycle.reactivestreams
+    implementation deps.androidx.room.runtime
+    kapt deps.androidx.room.compiler
+    implementation deps.androidx.room.rxjava
+    implementation deps.androidx.room.test
+
+    implementation deps.rx.java
+    implementation deps.rx.android
+    implementation deps.rx.kotlin
+
+    testImplementation deps.kotlin.test
+
+    testImplementation deps.spek.dsl
+    testImplementation deps.spek.runner
+    testImplementation deps.kotlin.reflect
+
+    testImplementation deps.junit
+
+    testImplementation deps.mockito.core
+    testImplementation deps.mockito.kotlin
+    testImplementation deps.jdbc.dbtools
+    testImplementation deps.jdbc.sqlite
+}
+
+repositories {
+    mavenCentral()
+}
+
+tasks.withType(org.jetbrains.kotlin.gradle.tasks.KotlinCompile).all {
+    kotlinOptions {
+        jvmTarget = JavaVersion.VERSION_1_8
+    }
+}
