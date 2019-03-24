@@ -1,4 +1,4 @@
-package com.moriiimo.droidkaigi.unittestwithspek.infra.repository
+package com.moriiimo.droidkaigi.unittestwithspek.infra.repository.todo
 
 import android.content.Context
 import com.moriiimo.droidkaigi.unittestwithspek.infra.db.TodoDatabase

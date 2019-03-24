@@ -1,4 +1,4 @@
-package com.moriiimo.droidkaigi.unittestwithspek.ui.binding
+package com.moriiimo.droidkaigi.unittestwithspek.ui.todo.binding
 
 import com.moriiimo.droidkaigi.unittestwithspek.model.Todo
 

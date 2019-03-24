@@ -1,4 +1,4 @@
-package com.moriiimo.droidkaigi.unittestwithspek.infra.repository
+package com.moriiimo.droidkaigi.unittestwithspek.infra.repository.todo
 
 import com.moriiimo.droidkaigi.unittestwithspek.infra.db.TodoEntity
 import com.moriiimo.droidkaigi.unittestwithspek.model.Todo

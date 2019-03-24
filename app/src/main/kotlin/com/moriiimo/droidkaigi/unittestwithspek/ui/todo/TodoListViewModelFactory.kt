@@ -1,4 +1,4 @@
-package com.moriiimo.droidkaigi.unittestwithspek.ui
+package com.moriiimo.droidkaigi.unittestwithspek.ui.todo
 
 import android.app.Application
 import androidx.lifecycle.ViewModel

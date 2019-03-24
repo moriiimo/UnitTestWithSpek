@@ -1,9 +1,9 @@
-package com.moriiimo.droidkaigi.unittestwithspek.ui
+package com.moriiimo.droidkaigi.unittestwithspek.ui.todo
 
 import android.view.ViewGroup
 import androidx.recyclerview.widget.DiffUtil
 import androidx.recyclerview.widget.ListAdapter
-import com.moriiimo.droidkaigi.unittestwithspek.ui.binding.TodoBindingModel
+import com.moriiimo.droidkaigi.unittestwithspek.ui.todo.binding.TodoBindingModel
 
 
 class TodoAdapter : ListAdapter<TodoBindingModel, TodoViewHolder>(ITEM_CALL_BACK) {

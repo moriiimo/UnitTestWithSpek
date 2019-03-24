@@ -1,9 +1,9 @@
-package com.moriiimo.droidkaigi.unittestwithspek.ui
+package com.moriiimo.droidkaigi.unittestwithspek.ui.todo
 
 import androidx.lifecycle.MutableLiveData
-import com.moriiimo.droidkaigi.unittestwithspek.infra.repository.TodoRepository
-import com.moriiimo.droidkaigi.unittestwithspek.ui.binding.TodoBindingModel
-import com.moriiimo.droidkaigi.unittestwithspek.ui.binding.TodoBindingModelConverter
+import com.moriiimo.droidkaigi.unittestwithspek.infra.repository.todo.TodoRepository
+import com.moriiimo.droidkaigi.unittestwithspek.ui.todo.binding.TodoBindingModel
+import com.moriiimo.droidkaigi.unittestwithspek.ui.todo.binding.TodoBindingModelConverter
 import io.reactivex.Scheduler
 import io.reactivex.disposables.CompositeDisposable
 import io.reactivex.rxkotlin.subscribeBy

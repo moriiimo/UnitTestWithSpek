@@ -1,9 +1,9 @@
-package com.moriiimo.droidkaigi.unittestwithspek.ui
+package com.moriiimo.droidkaigi.unittestwithspek.ui.todo
 
 import android.app.Application
 import androidx.lifecycle.AndroidViewModel
 import androidx.lifecycle.MutableLiveData
-import com.moriiimo.droidkaigi.unittestwithspek.infra.repository.TodoRepository
+import com.moriiimo.droidkaigi.unittestwithspek.infra.repository.todo.TodoRepository
 import io.reactivex.Scheduler
 
 class TodoListViewModel(
