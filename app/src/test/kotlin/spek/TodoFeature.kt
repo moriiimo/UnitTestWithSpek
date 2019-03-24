@@ -1,6 +1,6 @@
 package spek
 
-import com.moriiimo.droidkaigi.unittestwithspek.model.Todo
+import com.moriiimo.droidkaigi.unittestwithspek.todo.model.Todo
 import org.spekframework.spek2.Spek
 import org.spekframework.spek2.style.gherkin.Feature
 import java.util.*

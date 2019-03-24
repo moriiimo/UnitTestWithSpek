@@ -12,7 +12,7 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme"
         tools:ignore="GoogleAppIndexingWarning">
-        <activity android:name=".ui.MainActivity">
+        <activity android:name="com.moriiimo.droidkaigi.unittestwithspek.MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 

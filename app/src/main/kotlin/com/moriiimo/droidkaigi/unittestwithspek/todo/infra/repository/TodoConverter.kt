@@ -1,7 +1,7 @@
-package com.moriiimo.droidkaigi.unittestwithspek.infra.repository.todo
+package com.moriiimo.droidkaigi.unittestwithspek.todo.infra.repository
 
-import com.moriiimo.droidkaigi.unittestwithspek.infra.db.TodoEntity
-import com.moriiimo.droidkaigi.unittestwithspek.model.Todo
+import com.moriiimo.droidkaigi.unittestwithspek.todo.infra.db.TodoEntity
+import com.moriiimo.droidkaigi.unittestwithspek.todo.model.Todo
 
 object TodoConverter {
   fun convert(list: List<TodoEntity>): List<Todo> = list.map {
@@ -16,7 +16,7 @@ object TodoConverter {
   )
 
   fun convertToEntity(list: List<Todo>): List<TodoEntity> = list.map {
-    TodoConverter.convert(it)
+    convert(it)
   }
 
   private fun convert(todo: Todo): TodoEntity = TodoEntity(

@@ -1,6 +1,6 @@
-package com.moriiimo.droidkaigi.unittestwithspek.ui.todo.binding
+package com.moriiimo.droidkaigi.unittestwithspek.todo.ui.binding
 
-import com.moriiimo.droidkaigi.unittestwithspek.model.Todo
+import com.moriiimo.droidkaigi.unittestwithspek.todo.model.Todo
 
 
 object TodoBindingModelConverter {

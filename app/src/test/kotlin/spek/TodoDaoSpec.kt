@@ -2,8 +2,8 @@ package spek
 
 import android.content.Context
 import androidx.room.Room
-import com.moriiimo.droidkaigi.unittestwithspek.infra.db.TodoDatabase
-import com.moriiimo.droidkaigi.unittestwithspek.infra.db.TodoEntity
+import com.moriiimo.droidkaigi.unittestwithspek.todo.infra.db.TodoDatabase
+import com.moriiimo.droidkaigi.unittestwithspek.todo.infra.db.TodoEntity
 import io.reactivex.Single
 import org.dbtools.android.room.jdbc.JdbcSQLiteOpenHelperFactory
 import org.mockito.Mockito

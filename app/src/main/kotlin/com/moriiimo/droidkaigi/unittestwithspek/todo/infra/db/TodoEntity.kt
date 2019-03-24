@@ -1,4 +1,4 @@
-package com.moriiimo.droidkaigi.unittestwithspek.infra.db
+package com.moriiimo.droidkaigi.unittestwithspek.todo.infra.db
 
 import androidx.room.Entity
 import androidx.room.PrimaryKey

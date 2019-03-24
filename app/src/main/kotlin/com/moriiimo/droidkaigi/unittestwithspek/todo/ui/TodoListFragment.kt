@@ -1,4 +1,4 @@
-package com.moriiimo.droidkaigi.unittestwithspek.ui.todo
+package com.moriiimo.droidkaigi.unittestwithspek.todo.ui
 
 import android.os.Bundle
 import android.view.LayoutInflater

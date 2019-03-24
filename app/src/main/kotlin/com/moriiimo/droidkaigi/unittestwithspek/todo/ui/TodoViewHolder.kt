@@ -1,10 +1,10 @@
-package com.moriiimo.droidkaigi.unittestwithspek.ui.todo
+package com.moriiimo.droidkaigi.unittestwithspek.todo.ui
 
 import android.view.LayoutInflater
 import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
 import com.moriiimo.droidkaigi.unittestwithspek.R
-import com.moriiimo.droidkaigi.unittestwithspek.ui.todo.binding.TodoBindingModel
+import com.moriiimo.droidkaigi.unittestwithspek.todo.ui.binding.TodoBindingModel
 import kotlinx.android.synthetic.main.view_todo.view.*
 
 class TodoViewHolder(parent: ViewGroup) : RecyclerView.ViewHolder(LayoutInflater.from(parent.context).inflate(

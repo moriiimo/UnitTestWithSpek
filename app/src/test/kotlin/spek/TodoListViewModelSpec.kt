@@ -2,7 +2,7 @@ package spek
 
 import android.app.Application
 import androidx.lifecycle.Observer
-import com.moriiimo.droidkaigi.unittestwithspek.ui.todo.TodoListViewModel
+import com.moriiimo.droidkaigi.unittestwithspek.todo.ui.TodoListViewModel
 import com.nhaarman.mockito_kotlin.mock
 import io.reactivex.schedulers.Schedulers
 import org.mockito.Mockito

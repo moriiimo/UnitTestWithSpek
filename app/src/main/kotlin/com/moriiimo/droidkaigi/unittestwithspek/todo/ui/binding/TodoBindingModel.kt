@@ -1,4 +1,4 @@
-package com.moriiimo.droidkaigi.unittestwithspek.ui.todo.binding
+package com.moriiimo.droidkaigi.unittestwithspek.todo.ui.binding
 
 data class TodoBindingModel(
     val id: Int,

@@ -1,8 +1,8 @@
-package com.moriiimo.droidkaigi.unittestwithspek.infra.repository.todo
+package com.moriiimo.droidkaigi.unittestwithspek.todo.infra.repository
 
 import android.content.Context
-import com.moriiimo.droidkaigi.unittestwithspek.infra.db.TodoDatabase
-import com.moriiimo.droidkaigi.unittestwithspek.model.Todo
+import com.moriiimo.droidkaigi.unittestwithspek.todo.infra.db.TodoDatabase
+import com.moriiimo.droidkaigi.unittestwithspek.todo.model.Todo
 import io.reactivex.Completable
 import io.reactivex.Scheduler
 import io.reactivex.Single
@@ -18,11 +18,13 @@ class TodoRepository(
     private var instance: TodoRepository? = null
 
     fun getInstance(context: Context): TodoRepository =
-        instance ?: synchronized(this) {
-          instance ?: TodoRepository(
-              todoDatabase = TodoDatabase.getInstance(context),
-              ioScheduler = Schedulers.io()
-          ).also {
+        instance
+            ?: synchronized(this) {
+          instance
+              ?: TodoRepository(
+                  todoDatabase = TodoDatabase.getInstance(context),
+                  ioScheduler = Schedulers.io()
+              ).also {
             instance = it
           }
         }

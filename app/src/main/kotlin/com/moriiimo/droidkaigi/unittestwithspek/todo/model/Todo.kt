@@ -1,4 +1,4 @@
-package com.moriiimo.droidkaigi.unittestwithspek.model
+package com.moriiimo.droidkaigi.unittestwithspek.todo.model
 
 import java.util.*
 

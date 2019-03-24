@@ -1,6 +1,6 @@
 package junit
 
-import com.moriiimo.droidkaigi.unittestwithspek.model.Todo
+import com.moriiimo.droidkaigi.unittestwithspek.todo.model.Todo
 import org.junit.Before
 import org.junit.FixMethodOrder
 import org.junit.Test

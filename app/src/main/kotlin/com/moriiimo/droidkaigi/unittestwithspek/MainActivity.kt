@@ -1,9 +1,8 @@
-package com.moriiimo.droidkaigi.unittestwithspek.ui
+package com.moriiimo.droidkaigi.unittestwithspek
 
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
-import com.moriiimo.droidkaigi.unittestwithspek.R
-import com.moriiimo.droidkaigi.unittestwithspek.ui.todo.TodoListFragment
+import com.moriiimo.droidkaigi.unittestwithspek.todo.ui.TodoListFragment
 
 class MainActivity : AppCompatActivity() {
 
